@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.example.kyrsovaia"},{"l":"com.example.kyrsovaia.controllers"},{"l":"com.example.kyrsovaia.models"},{"l":"com.example.kyrsovaia.repositories"}];updateSearchResults();

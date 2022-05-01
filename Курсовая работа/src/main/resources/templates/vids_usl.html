@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Продукция</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<link rel="icon" type="image/png" href="images/иконка_на_вкладку.png">
+
+	<link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+
+	<!--Иконки-->
+	<link href="../static/css/fonts/icons_med.css" rel="stylesheet" th:href="@{/css/icons_med.css}">
+
+	<!-- цвета-->
+	<link href="../static/css/default-color.css" rel="stylesheet" id="color" th:href="@{/css/default-color.css}">
+
+	<!--bootstrap-->
+	<link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}">
+
+	<!--для меню-->
+	<link href="../static/css/dropmenu.css" rel="stylesheet" th:href="@{/css/dropmenu.css}">
+
+	<!--для формы в бд-->
+	<link href="../static/css/accordion.css" rel="stylesheet" th:href="@{/css/accordion.css}">
+
+	<!--Owl Carousel-->
+	<link href="../static/css/owl.carousel.css" rel="stylesheet" th:href="@{/css/owl.carousel.css}">
+
+	<!-- мобилки -->
+	<link rel="stylesheet" th:href="@{/css/jquery.mmenu.all.css}" href="../static/css/jquery.mmenu.all.css" />
+	<link rel="stylesheet" th:href="@{/css/demo.css}" href="../static/css/demo.css" />
+
+
+</head>
+  <body>
+
+  <div id="wrap">
+
+	  <!--хедер-->
+
+	  <div id="header-2">
+
+		  <header class="header header2">
+			  <div class="container">
+
+
+				  <div class="row">
+
+					  <div class="col-md-3">
+						  <a href="/Products-delivery/Курсовая%20работа/src/main/java" class="logo" style="color: #0D0D0D">
+							  <h5>Доставка продуктов</h5></a>
+					  </div>
+
+					  <div class="col-md-9">
+
+
+						  <nav class="menu-2">
+							  <ul class="nav wtf-menu">
+								  <li class="item-select parent"><a href="/Products-delivery/Курсовая%20работа/src/main/java">Главная страница</a>
+								  </li>
+
+								  <li class="parent"><a href="/about_us">О нас</a>
+								  </li>
+
+								  <li class="parent"><a href="#.">Страницы</a>
+									  <ul class="submenu">
+										  <li> <a href="/zapis">Заявка на доставку</a> </li>
+										  <li> <a href="/vids_usl">Продукция</a> </li>
+										  <li> <a href="/about_us">О нас</a> </li>
+										  <li> <a href="/auth">Я владелец</a> </li>
+									  </ul>
+								  </li>
+
+								  <li><a href="/zapis">Заявка на доставку</a></li>
+
+								  <li class="parent"><a href="/vids_usl">Продукция</a></li>
+								  <li class="parent"><a href="/auth">Я владелец</a></li>
+
+
+
+							  </ul>
+						  </nav>
+
+					  </div>
+
+				  </div>
+
+
+			  </div>
+		  </header>
+	  </div>
+
+	  <!--хедер-->
+
+
+	  <!-- для мобилок -->
+	  <div class="container">
+		  <div id="page">
+			  <header class="header">
+				  <a href="#menu"></a>
+
+			  </header>
+
+			  <nav id="menu">
+				  <ul>
+					  <li class="select"><a href="/Products-delivery/Курсовая%20работа/src/main/java">Главная страница</a></li>
+					  <li><a href="/about_us">О нас</a></li>
+					  <li><a href="#.">Страницы</a>
+						  <ul>
+							  <li> <a href="/zapis">Заявка на доставку</a> </li>
+							  <li> <a href="/vids_usl">Продукция</a> </li>
+							  <li> <a href="/about_us">О нас</a> </li>
+							  <li><a href="/auth">Я владелец</a></li>
+						  </ul>
+					  </li>
+
+					  <li><a href="/zapis">Заявка на доставку</a></li>
+
+					  <li><a href="/vids_usl">Продукция</a></li>
+					  <li><a href="/auth">Я владелец</a></li>
+
+				  </ul>
+
+			  </nav>
+		  </div>
+	  </div>
+	  <!-- для мобилок -->
+
+
+
+
+	  <!--баннер-->
+
+	  <div class="banner">
+
+		  <div class="detail" style=" box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.32);  padding:24px 0 28px 0;">
+			  <div class="container">
+				  <div class="row">
+					  <div class="col-md-12">
+
+						  <div class="paging">
+							  <h2>Продукция</h2>
+							  <ul>
+								  <li><a href="/Products-delivery/Курсовая%20работа/src/main/java" style = "float: left;  background: url(images/paging-arrow.png) no-repeat right 9px;  padding: 0 20px 0 0;  margin: 0 12px 0 0;">Главная страница</a></li>
+								  <li><a style="margin-left: -35px">Продукция</a></li>
+							  </ul>
+						  </div>
+
+					  </div>
+				  </div>
+			  </div>
+		  </div>
+
+	  </div>
+	  <!--баннер-->
+   
+   <!--Start Content-->
+   <div class="content">
+   
+   
+  
+  <div class="vid_uslug_content">
+   		<div class="container">
+        	
+            <div class="row">
+	        <div class="col-md-12">
+            <div class="main-title">
+                <h2> Продукция</h2>
+                <p>Здесь вы можете ознакомиться с основными товарами нашей продукции, которую мы готовы доставить Вам уже завтра!</p>
+            </div>
+            </div>
+            </div>
+            
+            <div class="row">
+
+				<div class="col-md-4">
+					<div class="serv-sec">
+						<img class="banner-img" src="images/овощи_виды_продукции.jpg" alt="">
+						<div class="detail">
+							<h5>Овощи</h5>
+							<p>Овощи всегда пригодятся к вашему столу и не только. С ними любые блюда обретут незабываемый вкус и надолго останутся в ваших сердцах.
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="serv-sec">
+						<img class="banner-img" src="images/фрукты_виды_продукции.jpg" alt="">
+						<div class="detail">
+							<h5>Фрукты</h5>
+							<p>Фрукты всегда были и будут полезны для здоровья. В них модержится большое количество витаминов столь необходимых нам ежедневно.</p>
+
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="serv-sec">
+						<img class="banner-img" src="images/мясо_виды_продукции.jpg" alt="">
+						<div class="detail">
+							<h5>Мясо</h5>
+							<p>Практически каждый из нас ел мясо в том или ином виде и большинство из нас потребляют его как минимум 1 раз в неделю. У нас вы можете купить очень качественное мясо.</p>
+						</div>
+					</div>
+				</div>
+				
+				<div class="col-md-4">
+					<div class="serv-sec">
+						<img class="banner-img" src="images/молочная_продукция_виды_продукции.jpg" alt="">
+						<div class="detail">
+							<h5>Молочная продукция</h5>
+							<p>Все мы любим завтракать, выпив свой любимый кофе или закончить свой день стаканом молока, именно продукцию данного сегиента мы готовы вам доставить. </p>
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="serv-sec">
+						<img class="banner-img" src="images/напитки_виды_продукции.jpg" alt="">
+						<div class="detail">
+							<h5>Напитки</h5>
+							<p>У нас присутствует огромное количество разнообразных напитков, начиная от газированных и заканчивая алкогольными, благодаря этому широкому выбору у вас не остнется сомнений в выборе нашей доставки.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="serv-sec">
+						<img class="banner-img" src="images/хлебобулочные_изделия_виды_продукции.jpg" alt="">
+						<div class="detail">
+							<h5>Хлебобулочные изделия</h5>
+							<p>Незаменимым дополнением к любому приему пищи является ломтик хлеба, который способствет лучшему перевариванию пищи. У нас вы можете заказать любое хлебобулочное изделие.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="serv-sec">
+						<img class="banner-img" src="images/рыбная_продукция_виды_продукции.jpg" alt="">
+						<div class="detail">
+							<h5>Рыбная продукция</h5>
+							<p>Принято считать, что рыбу нужно есть по четвергам, вероятно пора нарушать устоявшиеся мнения, закажите интересующую вас рыбу прямо сейчас.</p>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+            
+            
+        </div>
+   </div>
+  
+   
+   </div>
+   <!--End Content-->
+
+
+
+	  <!--футер-->
+	  <footer class="footer" id="footer">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-md-12">
+					  <div class="emergency">
+						  <i class="icon-phone5"></i>
+						  <span class="text">Для звонков</span>
+						  <span class="number">8-(888)-88-888-88</span>
+					  </div>
+				  </div>
+			  </div>
+
+
+			  <div class="main-footer">
+				  <div class="row">
+
+					  <div class="col-md-6">
+
+						  <div class="useful-links">
+							  <div class="title">
+								  <h5>Доставка продуктов</h5>
+							  </div>
+
+							  <div class="detail">
+								  <ul>
+									  <li style=" background: url(images/links-arrow-light.png) no-repeat 0 9px;"> <a href="/zapis">Заявка на доставку</a> </li>
+									  <li style=" background: url(images/links-arrow-light.png) no-repeat 0 9px;"> <a href="/vids_usl">Продукция</a> </li>
+									  <li style=" background: url(images/links-arrow-light.png) no-repeat 0 9px;"> <a href="/about_us">О нас</a> </li>
+								  </ul>
+							  </div>
+
+						  </div>
+
+					  </div>
+
+					  <div class="col-md-6">
+
+						  <div class="get-touch">
+							  <div class="title">
+								  <h5>Информация</h5>
+							  </div>
+
+							  <div class="detail">
+								  <div class="get-touch">
+
+
+									  <span class="text">Доставка продуктов</span>
+
+
+									  <ul>
+										  <li><i class="icon-location"></i> <span>119454, ЦФО, г. Москва, Проспект Вернадского, д. 78</span></li>
+										  <li><i class="icon-phone4"></i> <span>8-(888)-88-888-88</span></li>
+										  <li><a href="mailto:posysaev20001@mail.ru ?subject=Письмо от посетителя сайта "><i class="icon-dollar"></i> <span>posysaev20001@mail.ru</span></a></li>
+									  </ul>
+
+								  </div>
+							  </div>
+
+						  </div>
+
+					  </div>
+
+				  </div>
+
+			  </div>
+
+		  </div>
+
+		  <div class="footer-bottom">
+			  <div class="container">
+
+
+
+				  <span style="text-align: center;" class="copyrights">Copyright &copy; 2021 Доставка продуктов. Все права защищены.</span>
+
+
+
+			  </div>
+
+		  </div>
+
+	  </footer>
+	  <!--футер-->
+
+
+
+	  <a href="#0" class="cd-top" style="background: url(images/back-top.png) no-repeat center 50%; background-color: #02adc6;"></a>
+  </div>
+
+
+
+
+
+  <script src="js/jquery.js"></script>
+  <!-- плавный скролл -->
+  <script src="js/scroll-desktop.js"></script>
+  <script src="static/js/scroll-desktop-smooth.js"></script>
+
+  <!-- слайдеры-->
+  <script src="js/jquery.themepunch.revolution.min.js"></script>
+  <script src="js/jquery.themepunch.tools.min.js"></script>
+
+
+  <!-- Выбор даты и наведение курсора ввода -->
+  <script src="js/classie.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+
+  <script src="js/tabs.js"></script>
+
+
+  <!--Carousel -->
+  <script src="js/owl.carousel.js"></script>
+
+  <!-- мобилки -->
+  <script src="js/jquery.mmenu.min.all.js"></script>
+
+  <!-- все скрипты -->
+  <script src="js/custom.js"></script>
+
+
+</body>
+</html>

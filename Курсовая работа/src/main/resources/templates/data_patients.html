@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="../static/css/styleForAuth.css" rel="stylesheet" type="text/css" />
+    <script
+            type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"
+    ></script>
+
+    <link rel="icon" type="image/png" href="images/иконка_на_вкладку.png">
+
+    <link href="../static/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+
+    <!--Иконки-->
+    <link href="../static/css/fonts/icons_med.css" rel="stylesheet" th:href="@{/css/icons_med.css}">
+
+    <!-- цвета-->
+    <link href="../static/css/default-color.css" rel="stylesheet" id="color" th:href="@{/css/default-color.css}">
+
+    <!--bootstrap-->
+    <link href="../static/css/bootstrap.css" rel="stylesheet" th:href="@{/css/bootstrap.css}">
+
+    <!--для меню-->
+    <link href="../static/css/dropmenu.css" rel="stylesheet" th:href="@{/css/dropmenu.css}">
+
+    <!--для формы в бд-->
+    <link href="../static/css/accordion.css" rel="stylesheet" th:href="@{/css/accordion.css}">
+
+    <!--Owl Carousel-->
+    <link href="../static/css/owl.carousel.css" rel="stylesheet" th:href="@{/css/owl.carousel.css}">
+    <style type="text/css">
+        th, td {
+            border-style: solid;
+            border-width: 0 1px 1px 0;
+            border-color: black;
+        }
+        th:first-child, td:first-child {
+            text-align: left;
+        }
+        th:first-child {
+            border-top-left-radius: 10px;
+        }
+        th:last-child {
+            border-top-right-radius: 10px;
+            border-right: none;
+        }
+        td {
+            padding: 10px 20px;
+        }
+        tr:last-child td:first-child {
+            border-radius: 0 0 0 10px;
+        }
+        tr:last-child td:last-child {
+            border-radius: 0 0 10px 0;
+        }
+        tr td:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+<body style="background: #02adc6">
+<div id="header-2">
+
+    <header class="header header2">
+        <div class="container">
+
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <a href="/Products-delivery/Курсовая%20работа/src/main/java" class="logo" style="color: #0D0D0D">
+                        <h5>Доставка продуктов</h5></a>
+                </div>
+
+                <div class="col-md-9">
+
+
+                    <nav class="menu-2">
+                        <ul class="nav wtf-menu">
+                            <li class="item-select parent"><a href="/Products-delivery/Курсовая%20работа/src/main/java">Главная страница</a>
+                            </li>
+
+                            <li class="parent"><a href="/about_us">О нас</a>
+                            </li>
+
+                            <li class="parent"><a href="#.">Страницы</a>
+                                <ul class="submenu">
+                                    <li> <a href="/zapis">Заявка на доставку</a> </li>
+                                    <li> <a href="/vids_usl">Продукция</a> </li>
+                                    <li> <a href="/about_us">О нас</a> </li>
+                                    <li> <a href="/auth">Я владелец</a> </li>
+                                </ul>
+                            </li>
+
+                            <li><a href="/zapis">Заявка на доставку</a></li>
+
+                            <li class="parent"><a href="/vids_usl">Продукция</a></li>
+                            <li class="parent"><a href="/auth">Я владелец</a></li>
+
+
+
+                        </ul>
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+</div>
+<div class="qw" style="padding: 60px 0px;">
+<table style="border-collapse: collapse; line-height: 1.1;background:  radial-gradient(farthest-corner at 50% 50%, white, #DCECF8);color: #0C213B; width: 600px;height: 400px;margin: auto;">
+    <caption style="font-weight: bold;font-size: 2em; padding: 10px;color: white;text-shadow: 1px 1px 0 rgba(0,0,0,.3);">Заявки на доставку</caption>
+    <tr>
+        <td class="first">id</td>
+        <td class="first">Дата поставки заказа</td>
+        <td class="first">Email</td>
+        <td class="first">ФИО</td>
+        <td class="first">Номер телефона</td>
+    </tr>
+    <tr  th:each="el: ${zakaz}">
+        <td th:text="${el.id}"></td>
+        <td th:text="${el.data_postavki_zakaza}"></td>
+        <td th:text="${el.email}"></td>
+        <td th:text="${el.name}"></td>
+        <td th:text="${el.number}"></td>
+    </tr>
+</table>
+</div>
+<!--футер-->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="emergency">
+                    <i class="icon-phone5"></i>
+                    <span class="text">Для звонков</span>
+                    <span class="number">8-(888)-88-888-88</span>
+                    <img src="images/emergency-divider.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-footer">
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <div class="useful-links">
+                        <div class="title">
+                            <h5>Доставка продуктов</h5>
+                        </div>
+
+                        <div class="detail">
+                            <ul>
+                                <li style=" background: url(images/links-arrow-light.png) no-repeat 0 9px;"> <a href="/zapis">Заявка на доставку</a> </li>
+                                <li style=" background: url(images/links-arrow-light.png) no-repeat 0 9px;"> <a href="/vids_usl">Продукция</a> </li>
+                                <li style=" background: url(images/links-arrow-light.png) no-repeat 0 9px;"> <a href="/about_us">О нас</a> </li>
+                                <li style=" background: url(images/links-arrow-light.png) no-repeat 0 9px;"> <a href="/auth">Я владелец</a> </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6">
+
+                    <div class="get-touch">
+                        <div class="title">
+                            <h5>Информация</h5>
+                        </div>
+
+                        <div class="detail">
+                            <div class="get-touch">
+
+
+                                <span class="text">Доставка продуктов</span>
+
+
+                                <ul>
+                                    <li><i class="icon-location"></i> <span>119454, ЦФО, г. Москва, Проспект Вернадского, д. 78</span></li>
+                                    <li><i class="icon-phone4"></i> <span>8-(888)-88-888-88</span></li>
+                                    <li><a href="mailto:posysaev20001@mail.ru ?subject=Письмо от посетителя сайта "><i class="icon-dollar"></i> <span>posysaev20001@mail.ru</span></a></li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+
+
+
+            <span style="text-align: center;" class="copyrights">Copyright &copy; 2021  Доставка продуктов. Все права защищены.</span>
+
+
+
+        </div>
+
+    </div>
+
+</footer>
+<!--футер-->
+
+
+
+<a href="#0" class="cd-top" style="background: url(images/back-top.png) no-repeat center 50%; background-color: #02adc6;"></a>
+</div>
+
+
+
+<script src="js/jquery.js"></script>
+<!-- плавный скролл -->
+<script src="js/scroll-desktop.js"></script>
+<script src="static/js/scroll-desktop-smooth.js"></script>
+
+<!-- слайдеры-->
+<script src="js/jquery.themepunch.revolution.min.js"></script>
+<script src="js/jquery.themepunch.tools.min.js"></script>
+
+
+<!-- Выбор даты и наведение курсора ввода -->
+<script src="js/classie.js"></script>
+<script src="js/jquery-ui-1.10.3.custom.js"></script>
+
+<script src="js/tabs.js"></script>
+
+
+<!--Carousel -->
+<script src="js/owl.carousel.js"></script>
+
+<!-- мобилки -->
+<script src="js/jquery.mmenu.min.all.js"></script>
+
+<!-- все скрипты -->
+<script src="js/custom.js"></script>
+<!--<script src="js/require.js"></script>-->
+
+<!--<script src="js/postgresql.js"></script>-->
+
+</body>
+</html>
